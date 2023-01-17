@@ -13,6 +13,7 @@ window.addEventListener('load', () => {
 
 	newTodoForm.addEventListener('submit', e => {
 		e.preventDefault();
+		if(document.querySelector('.content').value.length == 0){ alert ("Don't fool yourself. Todo can not be blank😀 ")}
 
 		const todo = {
 			content: e.target.elements.content.value,
