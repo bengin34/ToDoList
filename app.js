@@ -68,10 +68,12 @@ function DisplayTodos () {
 		input.type = 'checkbox';
 		input.checked = todo.done;
 		span.classList.add('bubble');
-		if (todo.category == 'personal') {
-			span.classList.add('personal');
-		} else {
-			span.classList.add('business');
+		if (todo.category == 'html') {
+			span.classList.add('html');
+		}else if (todo.category == 'js') {
+			span.classList.add('js');
+		}else {
+			span.classList.add('css');
 		}
 		content.classList.add('todo-content');
 		actions.classList.add('actions');
